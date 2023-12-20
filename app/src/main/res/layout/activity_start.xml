@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/imgstart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/logoprimary" />
+
+    <TextView
+        android:id="@+id/txtmedics1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medics"
+        android:textSize="30sp"
+        android:textColor="@color/primaryColor"
+        android:fontFamily="@font/interbold"
+        android:layout_below="@+id/imgstart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtmulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mulai pengalaman pengobatan anda"
+        android:layout_below="@id/txtmedics1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/interbold"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txtmasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk ke akun Medics Anda untuk mendapatkan fitur yang kami sediakan"
+        android:fontFamily="@font/interreguler"
+        android:textSize="16sp"
+        android:textColor="#717784"
+        android:textAlignment="center"
+        android:layout_below="@id/txtmulai"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtmasuk"
+        android:layout_marginTop="16dp"
+        android:width="300dp"
+        android:layout_centerHorizontal="true"
+        android:text="Masuk"
+        android:fontFamily="@font/interbold"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/shape1"
+        />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_masuk"
+        android:width="300dp"
+        android:textColor="@color/primaryColor"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Daftar"
+        android:fontFamily="@font/interbold"
+        android:background="@drawable/shape2"
+        />
+
+</RelativeLayout>

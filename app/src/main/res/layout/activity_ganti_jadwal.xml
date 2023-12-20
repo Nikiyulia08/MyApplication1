@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GantiJadwalActivity">
+
+   <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btn_bck5"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text3"
+        android:text="Pesan Jadwal"
+        android:fontFamily="@font/interbold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/btn_bck5"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="107dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text4"
+        android:layout_below="@id/text3"
+        android:text="Pilih Jadwal"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"/>
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text4"
+        android:layout_marginLeft="16dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text5"
+        android:text="Waktu"
+        android:fontFamily="@font/interbold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/calendar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterDoctorActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btn_bck3"
+        />
+
+    <TextView
+        android:id="@+id/txt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/btn_bck3"
+        android:fontFamily="@font/interbold"
+        android:text="Daftar"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="145dp"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt8"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:id="@+id/ly3">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape3"
+            android:hint="Masukkan nama anda"
+            android:textColorHint="#A1A8B0"
+            android:fontFamily="@font/interreguler"
+            android:paddingLeft="16dp"
+            android:drawableLeft="@drawable/ic_account"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/edtname1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape3"
+            android:hint="Masukkan nomor STR anda"
+            android:textColorHint="#A1A8B0"
+            android:fontFamily="@font/interreguler"
+            android:paddingLeft="16dp"
+            android:drawableLeft="@drawable/ic_numeric"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/edtstr"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape3"
+            android:hint="Masukkan spesialis anda"
+            android:textColorHint="#A1A8B0"
+            android:fontFamily="@font/interreguler"
+            android:paddingLeft="16dp"
+            android:drawableLeft="@drawable/ic_doctor"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/edtspesialis"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape3"
+            android:hint="Masukkan rumah sakit anda"
+            android:textColorHint="#A1A8B0"
+            android:fontFamily="@font/interreguler"
+            android:paddingLeft="16dp"
+            android:drawableLeft="@drawable/ic_hospital"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/edtrs"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape3"
+            android:hint="Masukkan email anda"
+            android:textColorHint="#A1A8B0"
+            android:fontFamily="@font/interreguler"
+            android:paddingLeft="16dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/edtemail1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape3"
+            android:hint="Masukkan password anda"
+            android:textColorHint="#A1A8B0"
+            android:fontFamily="@font/interreguler"
+            android:paddingLeft="16dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/edtpassword1"
+            />
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya setuju dengan Syarat dan Ketentuan Medics"
+            android:fontFamily="@font/interreguler"
+            android:paddingLeft="9dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly3"
+        android:layout_centerHorizontal="true"
+        android:text="Daftar"
+        android:fontFamily="@font/interbold"
+        android:textColor="@color/white"
+        android:width="350dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape1"
+        android:id="@+id/btn_daftar2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_daftar2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="26dp"
+        android:id="@+id/ly4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun?"
+            android:fontFamily="@font/interreguler"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:id="@+id/txt9"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk disini"
+            android:textColor="@color/primaryColor"
+            android:paddingLeft="5dp"
+            android:textSize="15sp"
+            android:id="@+id/txt10"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
