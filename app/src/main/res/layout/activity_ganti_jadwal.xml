@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,58 +7,415 @@
     tools:context=".GantiJadwalActivity">
 
    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_back"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:id="@+id/btn_bck5"
-        />
+       android:id="@+id/text5"
+       android:layout_width="24dp"
+       android:layout_height="24dp"
+       android:background="@drawable/ic_back"
+       tools:layout_editor_absoluteX="16dp"
+       tools:layout_editor_absoluteY="16dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text3"
-        android:text="Pesan Jadwal"
-        android:fontFamily="@font/interbold"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_toEndOf="@+id/btn_bck5"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="107dp"/>
+   <TextView
+       android:id="@+id/textPilihJadwal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/intermedium"
+       android:text="Pilih Jadwal"
+       android:textColor="@color/black"
+       android:textSize="19sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.411"
+       app:layout_constraintStart_toEndOf="@+id/text5"
+       tools:layout_editor_absoluteY="16dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text4"
-        android:layout_below="@id/text3"
-        android:text="Pilih Jadwal"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="16dp"
-        android:textSize="16sp"/>
+   <View
+       android:id="@+id/shapeView1"
+       android:layout_width="46dp"
+       android:layout_height="64dp"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="16dp"
+       android:background="@drawable/shapevector"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
 
-    <CalendarView
-        android:id="@+id/calendar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text4"
-        android:layout_marginLeft="16dp"
-        android:layout_centerInParent="true"/>
+   <TextView
+       android:layout_width="37dp"
+       android:layout_height="21dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="24dp"
+       android:layout_marginTop="16dp"
+       android:text="Mon"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text5"
-        android:text="Waktu"
-        android:fontFamily="@font/interbold"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_below="@id/calendar"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="16dp"/>
+   <TextView
+       android:layout_width="60dp"
+       android:layout_height="35dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="28dp"
+       android:layout_marginTop="44dp"
+       android:text="22"
+       android:textStyle="bold"
+       android:textColor="#000000"
+       android:textSize="20sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView2"
+       android:layout_width="46dp"
+       android:layout_height="64dp"
+       android:layout_marginStart="88dp"
+       android:layout_marginTop="16dp"
+       android:background="@drawable/shapevector"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="49dp"
+       android:layout_height="30dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="92dp"
+       android:layout_marginTop="16dp"
+       android:text="Tues"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="60dp"
+       android:layout_height="35dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="100dp"
+       android:layout_marginTop="44dp"
+       android:text="23"
+       android:textStyle="bold"
+       android:textColor="#000000"
+       android:textSize="20sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView3"
+       android:layout_width="46dp"
+       android:layout_height="64dp"
+       android:layout_marginStart="160dp"
+       android:layout_marginTop="16dp"
+       android:background="@drawable/shapevector"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="52dp"
+       android:layout_height="30dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="168dp"
+       android:layout_marginTop="16dp"
+       android:text="Wed"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="60dp"
+       android:layout_height="35dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="172dp"
+       android:layout_marginTop="44dp"
+       android:text="24"
+       android:textColor="#000000"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView4"
+       android:layout_width="46dp"
+       android:layout_height="64dp"
+       android:layout_marginStart="232dp"
+       android:layout_marginTop="16dp"
+       android:background="@drawable/shapevector"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="35dp"
+       android:layout_height="28dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="240dp"
+       android:layout_marginTop="16dp"
+       android:text="Thu"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="60dp"
+       android:layout_height="35dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="244dp"
+       android:layout_marginTop="44dp"
+       android:text="25"
+       android:textStyle="bold"
+       android:textColor="#000000"
+       android:textSize="20sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView5"
+       android:layout_width="46dp"
+       android:layout_height="64dp"
+       android:layout_marginStart="304dp"
+       android:layout_marginTop="16dp"
+       android:background="@drawable/shapevector"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="35dp"
+       android:layout_height="28dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="312dp"
+       android:layout_marginTop="16dp"
+       android:text="Fri"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="60dp"
+       android:layout_height="35dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="316dp"
+       android:layout_marginTop="44dp"
+       android:text="26"
+       android:textStyle="bold"
+       android:textColor="#000000"
+       android:textSize="20sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView6"
+       android:layout_width="103dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="116dp"
+       android:background="@drawable/shapevector1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="97dp"
+       android:layout_height="24dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="44dp"
+       android:layout_marginTop="120dp"
+       android:text="08:00"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView7"
+       android:layout_width="103dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="144dp"
+       android:layout_marginTop="116dp"
+       android:background="@drawable/shapevector1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="97dp"
+       android:layout_height="24dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="168dp"
+       android:layout_marginTop="120dp"
+       android:text="10:00"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView8"
+       android:layout_width="103dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="272dp"
+       android:layout_marginTop="116dp"
+       android:background="@drawable/shapevector1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="97dp"
+       android:layout_height="24dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="296dp"
+       android:layout_marginTop="120dp"
+       android:text="11:00"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView9"
+       android:layout_width="103dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="156dp"
+       android:background="@drawable/shapevector1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="97dp"
+       android:layout_height="24dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="44dp"
+       android:layout_marginTop="160dp"
+       android:text="13:00"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView10"
+       android:layout_width="103dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="144dp"
+       android:layout_marginTop="156dp"
+       android:background="@drawable/shapevector1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="97dp"
+       android:layout_height="24dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="168dp"
+       android:layout_marginTop="160dp"
+       android:text="14:00"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView11"
+       android:layout_width="103dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="272dp"
+       android:layout_marginTop="156dp"
+       android:background="@drawable/shapevector1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="97dp"
+       android:layout_height="24dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="296dp"
+       android:layout_marginTop="160dp"
+       android:text="15:00"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView12"
+       android:layout_width="103dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="196dp"
+       android:background="@drawable/shapevector1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="97dp"
+       android:layout_height="24dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="44dp"
+       android:layout_marginTop="200dp"
+       android:text="16:00"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView13"
+       android:layout_width="103dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="144dp"
+       android:layout_marginTop="196dp"
+       android:background="@drawable/shapevector1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="97dp"
+       android:layout_height="24dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="168dp"
+       android:layout_marginTop="200dp"
+       android:text="17:00"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <View
+       android:id="@+id/shapeView14"
+       android:layout_width="103dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="272dp"
+       android:layout_marginTop="196dp"
+       android:background="@drawable/shapevector1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <TextView
+       android:layout_width="97dp"
+       android:layout_height="24dp"
+       android:layout_gravity="center"
+       android:layout_marginStart="296dp"
+       android:layout_marginTop="200dp"
+       android:text="20:00"
+       android:textColor="#000000"
+       android:textSize="15sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPilihJadwal" />
+
+   <Button
+       android:id="@+id/myButton"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/shape1"
+       android:text="Buat Janji Temu"
+       android:textColor="@color/white"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_marginBottom="16dp"
+       android:layout_marginStart="16dp"
+       android:layout_marginEnd="16dp"/>
 
 
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
