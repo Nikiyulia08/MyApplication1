@@ -407,7 +407,7 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:background="@drawable/shape1"
-       android:text="Buat Janji Temu"
+       android:text="Ganti Jadwal"
        android:textColor="@color/white"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
